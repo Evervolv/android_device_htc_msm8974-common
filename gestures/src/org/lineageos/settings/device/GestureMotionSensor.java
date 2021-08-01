@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.lineageos.internal.util.FileUtils;
+import com.evervolv.internal.util.FileUtils;
 
 public class GestureMotionSensor {
 

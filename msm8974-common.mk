@@ -31,13 +31,12 @@ $(call inherit-product-if-exists, vendor/htc/msm8974-common/msm8974-common-vendo
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-ev
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+BOOT_ANIMATION_SIZE := 1080p
 
 # Device uses ultra-high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -273,7 +272,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.htc_msm8974
+    vendor.evervolv.touch@1.0-service.htc_msm8974
 
 # USB
 PRODUCT_PACKAGES += \

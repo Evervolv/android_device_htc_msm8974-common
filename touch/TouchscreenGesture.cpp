@@ -17,18 +17,18 @@
 #include "TouchscreenGesture.h"
 
 namespace vendor {
-namespace lineage {
+namespace evervolv {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
 
-// Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
+// Methods from ::vendor::evervolv::touch::V1_0::ITouchscreenGesture follow.
 Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb _hidl_cb) {
     _hidl_cb(NULL);
     return Void();
 }
 
-Return<bool> TouchscreenGesture::setGestureEnabled(const ::vendor::lineage::touch::V1_0::Gesture&,
+Return<bool> TouchscreenGesture::setGestureEnabled(const ::vendor::evervolv::touch::V1_0::Gesture&,
                                                    bool) {
     return true;
 }
@@ -36,5 +36,5 @@ Return<bool> TouchscreenGesture::setGestureEnabled(const ::vendor::lineage::touc
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace evervolv
 }  // namespace vendor

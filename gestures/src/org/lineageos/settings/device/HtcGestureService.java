@@ -42,7 +42,7 @@ import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 
-import lineageos.providers.LineageSettings;
+import evervolv.provider.EVSettings;
 
 public class HtcGestureService extends Service {
 
@@ -238,8 +238,8 @@ public class HtcGestureService extends Service {
         }
 
         if (mAudioManager.getRingerMode() != AudioManager.RINGER_MODE_SILENT) {
-            final boolean enabled = LineageSettings.System.getInt(mContext.getContentResolver(),
-                    LineageSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
+            final boolean enabled = EVSettings.System.getInt(mContext.getContentResolver(),
+                    EVSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
             if (enabled) {
                 mVibrator.vibrate(VibrationEffect.createOneShot(100,
                         VibrationEffect.DEFAULT_AMPLITUDE));

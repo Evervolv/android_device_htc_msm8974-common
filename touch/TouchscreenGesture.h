@@ -19,10 +19,10 @@
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/lineage/touch/1.0/ITouchscreenGesture.h>
+#include <vendor/evervolv/touch/1.0/ITouchscreenGesture.h>
 
 namespace vendor {
-namespace lineage {
+namespace evervolv {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -31,15 +31,15 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 
 struct TouchscreenGesture : public ITouchscreenGesture {
-    // Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
+    // Methods from ::vendor::evervolv::touch::V1_0::ITouchscreenGesture follow.
     Return<void> getSupportedGestures(getSupportedGestures_cb _hidl_cb) override;
-    Return<bool> setGestureEnabled(const ::vendor::lineage::touch::V1_0::Gesture&, bool) override;
+    Return<bool> setGestureEnabled(const ::vendor::evervolv::touch::V1_0::Gesture&, bool) override;
 };
 
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace evervolv
 }  // namespace vendor
 
 #endif  // VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
